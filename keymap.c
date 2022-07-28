@@ -23,6 +23,11 @@ enum ferris_layers {
 #define NO_AA LALT(KC_A)
 #define NO_OE LALT(KC_O)
 
+// Ctrl U and D
+#define CTRL_U LCTL(KC_U)
+#define CTRL_D LCTL(KC_D)
+
+// Layer keys
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 
@@ -35,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LOWER] = LAYOUT( /* [> LOWER <] */
-    _______, _______, _______, _______, NO_AA,           _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,
+    KC_PGUP, KC_PGDN, CTRL_U,  CTRL_D,  NO_AA,           _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,
     KC_BRID, KC_BRIU, KC_VOLD, KC_VOLU, NO_AE,           QK_BOOT, KC_F5,   KC_F6,   KC_F7,   KC_F8,
     KC_MRWD, KC_MPLY, KC_MFFD, KC_MUTE, NO_OE,           DEBUG,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
                                     _______, _______, _______, _______
