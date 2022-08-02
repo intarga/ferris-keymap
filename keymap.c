@@ -34,7 +34,7 @@ enum ferris_layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK] = LAYOUT(
-    KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,            KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,
+    KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT,
     KC_A,    HOME_R,  HOME_S,  HOME_T,  KC_D,            KC_H,    HOME_N,  HOME_E,  HOME_I,  KC_O,
     KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,            KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
                                     KC_LSFT, KC_SPC,  RAISE,   LOWER
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT(
     _______, _______, KC_LBRC, KC_RBRC, KC_GRV,          KC_0,    KC_1,    KC_2,    KC_3,    KC_BSPC,
-    KC_LABK, KC_RABK, KC_LPRN, KC_RPRN, KC_QUOT,         KC_MINS, KC_4,    KC_5,    KC_6,    KC_PLUS,
+    KC_LABK, KC_RABK, KC_LPRN, KC_RPRN, KC_SCLN,         KC_MINS, KC_4,    KC_5,    KC_6,    KC_PLUS,
     _______, _______, KC_LCBR, KC_RCBR, KC_BSLS,         KC_EQL,  KC_7,    KC_8,    KC_9,    KC_ENT,
                                     _______, _______, _______, _______
   ),
